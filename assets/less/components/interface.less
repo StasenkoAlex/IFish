@@ -8,3 +8,40 @@ button {
 		outline: none;
 	}
 }
+
+//SOCIAL ROUND BUTTON-LINKS VK, FB, YOUTUBE ....
+
+.social-list {
+	.clearfix();
+	padding-left: 2px;
+}
+
+.social-item {
+	margin-right: 16px;
+	float: left;
+	display: block;
+	width: 45px;
+	height: 45px;
+	border: 5px solid @active;
+	border-radius: 50%;
+	text-align: center;
+
+	&::last-child {
+		margin-right: 0;
+	}
+
+	.svg {
+		margin-top: 4px;
+		fill: @decor;
+		width: 27px;
+		height: 26px;
+
+		&--google {
+			width: 22px;
+		}
+	}
+}
+
+.social-item:hover .svg {
+	fill: @active;
+}

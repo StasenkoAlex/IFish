@@ -1353,7 +1353,7 @@ tbody.collapse.in {
 @font-face {
   font-family: 'SFUI Text';
   src: url('../fonts/SFUIText-Light.woff2') format('woff2'), url('../fonts/SFUIText-Light.woff') format('woff');
-  font-weight: 300;
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
@@ -1369,6 +1369,39 @@ button {
 }
 button:focus {
   outline: none;
+}
+.social-list {
+  padding-left: 2px;
+}
+.social-list::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.social-item {
+  margin-right: 16px;
+  float: left;
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: 5px solid #00888d;
+  border-radius: 50%;
+  text-align: center;
+}
+.social-item::last-child {
+  margin-right: 0;
+}
+.social-item .svg {
+  margin-top: 4px;
+  fill: #65ca58;
+  width: 27px;
+  height: 26px;
+}
+.social-item .svg--google {
+  width: 22px;
+}
+.social-item:hover .svg {
+  fill: #00888d;
 }
 body {
   font-family: 'SFUI Text', sans-serif;
@@ -1393,12 +1426,12 @@ a:hover {
 }
 .header__logo {
   display: block;
-  margin-left: 21px;
+  margin-left: 33px;
 }
 .nav-open {
   float: right;
-  margin-right: 20px;
-  margin-top: 12px;
+  margin-right: 35px;
+  margin-top: 11px;
   width: 40px;
   height: 36px;
   background: url(../img/btn-open.png) no-repeat center;
@@ -1406,17 +1439,17 @@ a:hover {
 .site-nav {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 100%;
-  padding: 8px 18px 70px 18px;
+  right: 15px;
+  left: 15px;
+  padding: 10px 19px 70px 19px;
   background-color: #fff;
   opacity: 0.9;
   z-index: 15;
 }
 .nav-close {
   position: absolute;
-  right: 35px;
-  top: 17px;
+  right: 36px;
+  top: 16px;
   width: 40px;
   height: 25px;
   background: url(../img/btn-close.png) no-repeat center;
@@ -1426,7 +1459,7 @@ a:hover {
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-bottom: 4px;
+  padding-bottom: 7px;
   font-family: 'Century Gothic';
   font-size: 20px;
   line-height: 28px;
@@ -1435,5 +1468,26 @@ a:hover {
 }
 .menu a {
   display: inline-block;
-  padding: 4px 0;
+}
+.contacts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 35px;
+  padding-top: 9px;
+  font-family: 'SFUI Text';
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+}
+.contacts li {
+  margin-bottom: 15px;
+}
+.contacts li:last-child {
+  margin-bottom: 0;
+}
+.contacts__title {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
 }

@@ -9,13 +9,13 @@
 
 .header__logo {
 	display: block;
-	margin-left: 21px;
+	margin-left: 33px;
 }
 
 .nav-open {
 	float: right;
-	margin-right: 20px;
-	margin-top: 12px;
+	margin-right: 35px;
+	margin-top: 11px;
 	width: 40px;
 	height: 36px;
 	background: url(../img/btn-open.png) no-repeat center;
@@ -24,9 +24,9 @@
 .site-nav {
 	position: absolute;
 	top: 0;
-	right: 0;
-	width: 100%;
-	padding: 8px 18px 70px 18px;
+	right: 15px;
+  left: 15px;
+  padding: 10px 19px 70px 19px;
 	background-color: #fff;
 	opacity: 0.9;
 	z-index: 15;
@@ -34,8 +34,8 @@
 
 .nav-close {
 	position: absolute;
-	right: 35px;
-	top: 17px;
+	right: 36px;
+	top: 16px;
 	width: 40px;
 	height: 25px;
 	background: url(../img/btn-close.png) no-repeat center;
@@ -44,7 +44,7 @@
 
 .menu {
 	.ul-unstyled();
-	padding-bottom: 4px;
+	padding-bottom: 7px;
 	font-family: 'Century Gothic';
 	font-size: 20px;
 	line-height: 28px;
@@ -53,6 +53,29 @@
   
   a {
   	display: inline-block;
-  	padding: 4px 0;
+  	
   }
+}
+
+.contacts {
+	.ul-unstyled();
+	margin-bottom: 35px;
+	padding-top: 9px;
+	font-family: 'SFUI Text';
+	font-size: 16px;
+	line-height: 22px;
+	color: #000;
+
+	li {
+		margin-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__title {
+		display: block;
+		font-size: 14px;
+		line-height: 24px;
+	}
 }
