@@ -9,6 +9,18 @@ button {
 	}
 }
 
+.btn-link {
+	display: inline-block;
+	padding: 7px 0 6px;
+	font-family: 'Century Gothic';
+  font-size: 15px;
+  line-height: 21px;
+  color: @active;
+  text-transform: uppercase;
+	text-align: center;
+	border: 2px solid @active;
+}
+
 //SOCIAL ROUND BUTTON-LINKS VK, FB, YOUTUBE ....
 
 .social-list {
@@ -44,4 +56,37 @@ button {
 
 .social-item:hover .svg {
 	fill: @active;
+}
+
+//ANIMATION
+
+@keyframes uprise  {
+	0%   { transform: translateY(-2000px);}
+	50%  { transform: translateY(-300px);}
+	100% { transform: translateY(-2000px);}
+}
+
+
+//TITLES
+
+h2.title {
+	position: relative;
+	margin: 0;
+	margin-bottom: 28px;
+	padding-top: 18px;
+  font-family: 'Century Gothic';
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: @active;
+
+  &::before {
+  	content: "";
+  	position: absolute;
+  	top: 2px;
+  	left: 0;
+  	width: 68px;
+  	height: 7px;
+  	background-color: @decor;
+  }
 }
