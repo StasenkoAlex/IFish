@@ -3,3 +3,5 @@
 *.psd
 less/*
 node_modules
+*.zip
+
